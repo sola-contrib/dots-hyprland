@@ -165,7 +165,7 @@ Item {
                     scale: root.scale
                     availableWorkspaceWidth: root.workspaceImplicitWidth
                     availableWorkspaceHeight: root.workspaceImplicitHeight
-                    widgetMonitorId: root.monitor.id
+                    widgetMonitor: HyprlandData.monitors.find(m => m.id == root.monitor.id)
 
                     property bool atInitPosition: (initX == x && initY == y)
 
